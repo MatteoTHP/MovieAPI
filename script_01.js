@@ -8,7 +8,7 @@ const fetching = () =>{
 }
 
 async function showMovie(){
-  console.log("update");
+  
   let film = document.getElementById('main');
   let results = await fetching();
   let movies = results.Search;
@@ -40,7 +40,7 @@ const fetchById = (id) =>{
 }
 
 async function showPopup(id){
-  console.log("popup");
+  
   let popUp = document.getElementById('popup');
   let movieById = await fetchById(id);
   let movie = movieById;
